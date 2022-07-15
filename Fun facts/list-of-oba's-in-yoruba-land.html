@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Truefactss Fun facts Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://i.postimg.cc/KYggZqQG/truefactss.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://i.postimg.cc/KYggZqQG/truefactss.jpg");min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://i.postimg.cc/KYggZqQG/truefactss.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Fun facts page</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOMEPAGE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ABOUT US</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+<i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button" onclick="toggleFunction()">HOMEPAGE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Truefactss</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"> A LIST OF OBAS</h3>
+  <p class="w3-center"><em>Uploaded 15/07/2022 by Abraham</em></p>
+  <p> A LIST OF OBAS (KINGS) TRADITIONAL TITLES IN YORUBALAND
+
+Ooni of Ile-Ife
+Alaafin of Oyo
+Awujale of Ijebuland
+Alake of Egbaland
+Olowu of Owu
+Olubadan of Ibadan
+Soun of Ogbomoso
+Oba of Benin
+Owa Obokun of Ijesha
+Osemawe of Ondo
+Ebumawe of Ago Iwoye
+Ataoja of Osogbo
+Deji of Akure
+Timi of Ede
+Orangun of Ila
+Alapa of Okin-Apa
+Eleko of Eko
+Aresa of Iresa (Aresapa of Iresa apa, Aresadu of Iresa Adu)
+Olugbon of Orile Igbon
+Onikoyi of Ikoyi
+Alaje of Ilu-Aje
+Okere of Saki
+Aseyin of Iseyin
+Onilala of Lanlate
+Eleruwa of Eruwa
+Alaketu of Ketu
+Alepata of Igboho
+Oluwo of Iwo
+Olugbo of Ugbo
+Olowo of Owo
+Ajero of Ijero-Ekiti
+Alara of Aramoko-Ekiti
+Alawe of Ilawe-Ekiti
+Ewi of Ado-Ekiti
+Ologotun of Ogotun-Ekiti
+Oloye of Oye-Ekiti
+Owa Ooye of Okemesi-Ekiti
+Olu of Itori
+Alaga of Aga-Olowo
+Olusi of Usi
+Olofa of Ofa
+ọwá of idanre
+Akarigbo of Remo
+Olu of Mushin
+Alaperu of Iperu
+Onisaga of Isaga
+Olubara of Ibara
+Ogiyan of Ejigbo
+Lalupo of Gbagura
+Alaye of Aiyetoro
+Olota of Ota
+Olu of Ilaro
+Olufi of Gbongan
+Attah of Ayiede Ekiti
+Ebumawe of Ago-Iwoye
+Onjo of Okeho
+Ayangburen of Ikorodu
+Ogoga of Ikere
+Orimolusi of Ijebu-Igbo
+Akaran of Badagry
+Akire of Ikire
+Osolo of Isolo
+Oniwere of Iwere-Ile
+Apetu of Ipetumodu
+Olu of Mushin
+Alaye of Efon-Alaye
+Onisanbo of Ogboro
+Aare of Ago-Are
+Olojee of Oje-Owode
+Asawo of Ayete
+Onigbeti of Igbeti
+Olokaka of Okaka
+Onipopo of Popo
+Onitede of Tede
+Onisemi of Isemi
+Onipapo of Ipapo
+Alageere of Ofiki
+Ajoriwin of Irawo
+Onimia of Imia
+Onidere of Idere
+Obaro of Kabba
+Olore of Ore
+Onpetu of Ijeruland
+Osile of Oke-Ona egba
+Orimolusi of Ijebugbo
+Onido of Iddo
+Onigbaja of Igbaja
+Onibeju of Ibeju-Lekki
+Oloja of Epe
+Alaawe of Awe
+Oba of Agboyi land
+Olugijo of Ogijoland
+Alabere of Abere Ede
+Ologobi of Ogobi Ede
+Olu of Sekona Ede
+Olu of Owode Ede
+Owa Ale of Ikare
+Omola of Imala
+Alara of Ilara-Mokin
+Akibio of Ilora
+Olofun of irele
+Jegun of Idepe
+Jegun of ile-Oluji
+Orungberuwa of Ode-Erinje
+Halu of Ode Aye
+Laragunsin of Iyasan
+Lapoki of Igbolako
+Alara of Igbokoda
+Lumure of Ayeka
+Sabiganna of Igana
+Afonja of Ilorin
+Owa of igbajo
+Onijaye of Ijaye
+Oloro Of Oro
+elesa Of Oke Ode
+Ogunsua of Modakeke
+Oluressi of lressi
+Olojudo of Ido-Ekiti
+Owa-Oye of Oke-Imesi
+Olokuku of Okuku
+Olunisa of Inisa
+Oloyan of Oyan
+Onijabe of Ijabe
+Onigbaye of Igbaye
+Afaji of Faji
+Akosin of Ekosi
+Alaje of Ilu Aje
+Olokua of Oku
+Alagbeye of Agbeye
+Onila-odo of Ila-odo
+Atapara of Iyeku
+Elekusa of Ekusa
+Olojudo of Ido Faboro Ekiti
+Alase of Ilasa Ekiti
+Sano of kogga
+Alasaba of Asaba
+Alasi of Asi
+Olopete of Opete
+Olopanda of Oponda
+Aromolaran of ijesaland
+Olu ifon of ifon
+Odemo of Isara
+Aringbajo of Igbajo Ijesa
+Alamodu of Ago-Amodu
+Onigbope of Igbope
+Obalufon of Sepeteri
+Alagbole of Agbonle
+Olowu of Telemu
+Odemo of Ishara remo
+Olaogboru Adimula of Ifeodan
+Aragbiji of Iragbiji
+Olororuwo of Ororuwo
+Olona of Ada
+Alaagba of Aagba
+Are of Ire
+Alageere of Ago Are,
+Oloto of Are
+Oloba of Oba Osin
+Oloru of Oru Ijebu
+Olu of Ile-Ogbo
+Olokuku of Okuku
+Oluressi of lressi
+Ajalorun of ijebu ife
+Oloko of ijebu imushin
+Elese of ilese ijebu
+Moyegeso of ijebu itele
+Owa-akinfin of ikinfin
+Oloko of oko
+Oloba of oba-oke
+Oniluju of Iluju
+Onifaji Of faji
+akosin Of ekosin
+onigbaye Of igbaye
+olokuku Of okuku
+olunisa Of inisa
+Owa Oroo of Agbado Ekiti
+Aree of ireeland
+Owa of Otan Ayegbaju
+Aragberi of Iragberi
+Alayegun of Ode-Omu
+Owatapa of Itapa Ekiti
+Oloro of Oro
+Eleju of Sanmora
+Onikoko of Koko
+Oniganmo of Ganmo
+Olupo of Ajassepo
+Elesie of Esie
+Elese of Igbaja
+Aala of Ilala
+Oloyopo of Eggi-Oyoipo
+Oludopo of Okeyapo
+Aboro of ibese land
+Olu of sawonjo
+Eleyinpo of Ipapo
+Onisemi of Isemi-Ile
+Oluigbo of Igbojaye
+Awaraja of Iwaraja
+Alana of Oke-ana
+Alatori of Atorin Ilesha
+Alada of Ada
+alaigbajo of arigbajo
+onifo of ifo
+Olorile of orile Ifoland
+Oni ilepa of ilepa ilepa
+Edemorun of kajola
+Olomu of omu aran
+Aloffa of ilofa
+Olosi of Osi
+Elepe of epe
+Ekesin of ora igbomina
+Olobaagun of Obaagun
+Olugunwa of Oke Amu
+Ololo of Oolo
+Onimaya of maya
+Onidada of dada
+onidiemin of idi-emin
+Onipara of Ipara
+Olokua of Okua
+Alaaye of Oke-Ayedun
+Oniroko of Iroko land
+Owatapa of Itapa Kingdom
+Olowu of Owu-Kuta
+Elese of Igbaja
+Oree of moba land
+Oree of otun
+Ẹbùrù of ibà.
+Agbolu of Agbaje
+Olu of Afowowa Sogaade
+Oloto of Ofiki
+Aare of Sando Ofiki
+Oloba of oba
+Alakola of Akola
+Olora of Ora-Ekiti
+Olopete of Opete
+Alakanran of Araromi
+Alararomi of Araromi Aperin
+Oniye of Iye-Ekiti
+Olowu of owu-isin
+olusin of isanlu-isin
+olusin of ijara-isin
+olusin of iji-irin
+oniwo of oke-aba
+oniwo of odu-ore
+oloba of oba-isin
+elekuu of odo eku-isin
+alala of ala-isin
+eledidi of edidi
+onigbin of oke-onigbin
+onigbesi of igbesi
+Onikole of ikole kingdom
+Elegboro of Ijebu-Ijesha
+Abodi of ikale land
+Olokaka of okaka
+Akinyinwa of ikinyinwa
+Oluaso of iberekodo land
+Oniwere of iwere ile
+Salu of Edunabon
+Olubaka of Oka land
+Onikereku of ikereku
+Olukoro of Ikoro Ekiti
+Onidofin of idofin
+Obawara of iwara-ife
+Awara of iwara-ijesa
+awara of iwara- Iwo
+ogogo of ifewara
+Olu of Okeamu
+Onigbope of Igbope
+Asigangan of Igangan
+Olusin of Isanlu Isin
+Alaremo of Aremo
+Olubosin of ifetedo
+Asaooni of Ora Igbomina
+Olosan of Osan Ekiti
+Elerin of Erinmope
+Ajalorun of ife ijebu
+Aale of Okelerin
+Alabudo of abudo
+Onigbamila of gbamila
+Alaaye of aye
+Olokusa of okusa
+Onilai of ilai
+Gbelepa of gbelepa
+Alaboto of aboto
+Onidigba of idigba
+Agura of gbagura
+Oshinle of okeona
+Oloyan of Oyan
+Olubaka of Oka land
+Aboro of Ibooro land
+Olojoku of Ojoku
+Onika of Ika
+Olomun of omuaran
+Onilogbo of Ilogbo
+Olumoro of Moro land
+Onimeko of Imeko land
+Oloola of Ilara
+Onidofa of Idofa
+Ooye of Iwoye
+Obaladi of Afon
+Olu of Imasayi
+Oluresi of lresi
+Obaro of Kabba
+alado of ado awaye
+alawaye of awaye
+Onisan of isan Ekiti
+Elero of ilero
+Olomu of omupo
+Alaran of aran orin
+Oluware of iware land
+Aganmo of ganmo
+Oloola of Ilara-Yewa
+Onidofa of Idofa
+Ooye of Iwoye
+Onipara of Ipara - Remo
+Odemo of Isara - Remo
+Alakaka of Akaka - Remo
+Alara of Ilara - Remo
+Agbowu of Ogbaagbaa
+Owa of Igbajo
+Elerin of Erin Ile
+Onibereko of Ibereko
+Oore of moba land
+Oloba of obaile
+Onirun of irun Akoko
+Ologbagi of Ogbagi Akoko
+Oni lrun of lrun Akoko
+Elese of Ese Akoko
+Deji of Arigidi Akoko
+Ologbagi of Ogbagi Akoko
+Oni Irun of Irun Akoko
+Elese of Ese Akoko
+Eleyinpo of Ipapo
+Onidofian of idofian
+Alamonyo of amonyo
+Onijoun of ijoun
+Alagutan of Abegunrin land
+Onífẹ̀dẹ̀gbó of Fẹ̀dẹ̀gbóland
+Aláyégún of Ayégún
+Alie of Ilie
+Onitabo of Itabo
+Alado of Ado-Awaye
+Asu of Fiditi
+Olupako of Shaare
+Alapomu of Apomu
+Alakire of Ikire
+Oliyere of Iyere
+Oniro of Komu
+Akirun of Ikirun
+Onidere of Idere
+Alajinapa of Ajinapa
+Onitewure of Tewure
+Arinjale of Ise Ekiti
+Olute of Ute
+Olopete Of Opete
+Elerin of Erin-ile
+Alara of ilara Remo
+Elese of Ilese.
+
+
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Don't forget to comment.</b></p><br>
+      <img src="https://i.postimg.cc/BQf81m2w/IMG-20220715-143454-628.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo" width="500" height="333">
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/upgraded.kolasmith"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/the_real_philip617"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://msng.link/o/?kolade_ogun2019=sc"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://pinterest.com/pin/create/button/?url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html&media=&descriptionWWE%20Kevin%20Owens%20Impersonates%20Stone%20cold%20Steve%20Austin%20%F0%9F%98%B3%20WrestleMania%2038"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html&text=WWE%20Kevin%20Owenshref%20Impersonates%20Stone%20cold%20Steve%20Austin%20%F0%9F%98%B3%20WrestleMania%2038"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://api.whatsapp.com/send?phone=+2348094815695&text=Hello+Bot+I+need+a+website" title="PS" target="_blank" class="w3-hover-text-green">Philip Smith Sites</a></p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
