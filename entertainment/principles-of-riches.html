@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Truefactss Artistic Review Page Principles of Riches</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Reviews Page</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOMEPAGE</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Sport</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Education</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Arts & Culture</a>
+    <a href="https://truefactss.github.io/entertainment/anikulapo-review.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Politics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Investigations</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Corporate Responsibility</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+<i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button" onclick="toggleFunction()">HOMEPAGE</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Sport</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Education</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Arts & Culture</a>
+    <a href="https://truefactss.github.io/entertainment/anikulapo-review.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Politics</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Investigations</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Corporate Responsibility</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Truefactss</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Principles of Riches</h3>
+  <p class="w3-center"><em>Okonkwo Goodness Pelumi</em></p>
+  <p> 
+     <p style="color:#0000FF">PRINCIPLES OF RICHES.</p>
+
+Early this week, I was watching a movie. In the course of watching the movie, a girl in that movie said, “ I'm never going to go broke”. Meanwhile, all she does was eat and sleep. 
+
+Now, this got me thinking- <p style="color:#0000FF">HOW DO YOU INTEND TO GET RICH WHEN YOU DON'T WORK?</p>
+
+Sounds ridiculous right? Yes, I know.  Nobody would ever want to affirm negativity in their life. Everybody wants the riches and silver of the world, but, how do you intend to execute that when you don't work towards it. 
+“Everything you wish for is a script in your head. You have to act to be able to bring the script to life”- Nessa.  
+
+Great! Now, the essence of this quote was to put you in an imaginative world, where all you wish for is like a script and you are the actor- you are only required to act to make the script a reality. Simple. 
+
+In this illustration, your script stands for your dreams. So, you have to act your script to reality through hard work.
+
+-HEY! Have you ever asked yourself how you sleep knowing fully well that you are broke?
+
+If you ask me, I would say horrible. Knowing that you are broke gives you terrible nightmares.  Except you are comfortable with being broke, which sounds almost impossible.   
+
+More reason it is important to fix yourself up.  In the next subheading, I would be discussing steps on how to lead you through the valley of brokeness to a brighter side.
+
+<p style="color:#0000FF">4 STEPS TO LEAD YOU OUT OF THE VALLEY OF BROKENESS.</p>
+
+<strong>FIND SOMETHING TO DO:</strong>  You can only work hard when you have a job.  So, the first thing is to get yourself fixed up. Find something you are good at, and establish yourself. 
+
+<strong>BE DETERMINED:</strong> Determination comes from the mind.  This is what would serve as your energy to keep you going and focused when facing obstacles.
+
+
+<strong>WORK HARD:</strong>  Hard work they say pays. Truly, it does when you are diligent with your work. 
+
+<strong>AVOID ILLEGAL DOINGS:</strong> ill-gotten wealth from illegal deals, doesn't end well. Try as much as possible to avoid illegal dealing.        
+                      
+
+
+Like I have always said, hard work is the only ticket to richness.  I hope this helps you. I wish you luck.
+ 
+
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Don't forget to comment.</b></p><br>
+      <script src="https://cdn.fastcomments.com/js/embed-v2.min.js"></script>
+<div id="fastcomments-widget"></div>
+<script>
+    FastCommentsUI(document.getElementById('fastcomments-widget'), {
+        tenantId: 'AC6VPRnrDyH'
+    });
+</script>
+
+      <img src="https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo" width="500" height="333">
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/upgraded.kolasmith"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/the_real_philip617"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://msng.link/o/?kolade_ogun2019=sc"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://pinterest.com/pin/create/button/?url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html&media=&descriptionWWE%20Kevin%20Owens%20Impersonates%20Stone%20cold%20Steve%20Austin%20%F0%9F%98%B3%20WrestleMania%2038"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/koladhino"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://api.whatsapp.com/send?phone=+2348094815695&text=Hello+Bot+I+need+a+website" title="PS" target="_blank" class="w3-hover-text-green">Philip Smith Sites</a></p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
