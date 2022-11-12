@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Truefactss Artistic Review Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Reviews Page</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOMEPAGE</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Sport</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Education</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Arts & Culture</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Politics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Investigations</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Corporate Responsibility</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+<i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Sport</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Education</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Arts & Culture</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Politics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Investigations</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Corporate Responsibility</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Truefactss</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Ànikulapo</h3>
+  <p class="w3-center"><em>Ayomide Kolawole</em></p>
+  <p> 
+     <p style="color:#0000FF">SÀRÓ ALASO ÒFÌ LATI GBÒGÁN.</p>
+
+   In Oyo empire where the movie was set was seen to be headed by a constitutional monarch.
+In Oyo, there is a warm welcoming. Where strangers are hospitalized, they are well known by the generosity but something was missing.
+
+    If you give a thief shelter and put food on his table, he would still sip your water without your consent.
+Following the story of a picaro persona, sàró aso-òfì from the village of Gbògán.
+
+     Immediately sàró stepped his foot into the Oyo empire, he should have encounter an unforgettable memory which would keep appearing in his head rather than how he get reminded of how he grew up and how he 
+
+     But rather, he was glady welcome by Àwárùn, an Oyomesi who was into pottery business.
+Sàró totally forgot his hard days and craves for better days when he saw the cool and calm place to lay his head.
+
+
+    When Sàró was warned by a young man, he didn't listen. He turned a deaf ear to his advice.
+Sàró, who supposed to have listened refused.
+
+ <p style="color:#0000FF">"When you choose an action, be ready to live with it consequences"</p>
+
+
+    Àwárùn, who's Sàró's refuge made the very first mistake by letting sàró enjoyed the sound of the night, she shouldn't have lured him to the hut of enjoyment where he enjoys the moans and sexual pleasures.
+
+
+    Why shouldn't he face the toughest times of his life before getting the sweetest part of it?
+And when he finally met the opportunity to be the person he craves for he? He ruined it!
+
+ <p style="color:#0000FF">“Itelorun baba ìwa"</p>
+
+   Fate had had it written when he met a soul whose her story is also similar to his, a woman that's priceless.
+
+   Why shouldn't he have the contentment that would have driven his everlasting Joy to his life and leaves the audience not in despair?
+
+   When Àwárùn warned him, he shouldn't have happened like he adhered, which means his fortune should have locate him when he was still in Oyo empire.
+
+
+  Before he could elope with Aròlàkè, he was beaten and given the chance to see the other side of life.
+As it should be, Aròlàkè helped him. She took the Àdó which dropped from the mouth of Àkàlà bird. A bird which has the power of resurrection. 
+
+
+  When sàró regained his conscious, why shouldn't he be contented with Aròlàkè alone and make Aròlàkè enjoy the pleasure of motherhood?
+
+   A teenage girl who has been inherited by the King, when she finally found the person who lingers her desire, he failed her.
+
+   Aròlàkè should have been given a child and let her see someone smile with and sàró should have given an opportunity to be an angel to people with help of the Àdó.
+
+
+   <p style="color:#0000FF">“itelorun baba ìwa"</p> sàró was not given the chance to be called the divine name 'Ànikulapo' and he renegade the words of the elders which says,
+ “ikún n je ògèdè, ikún n rèdí. Ikún o mò pe òun to dùn ni pani"
+
+  
+  Sàró should have been given a chance to be a satisfied soul and be called 'Ànikulapo'
+
+   Aròlàkè should have been given a child, “kí èmi nan rí omo ke."
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Don't forget to comment.</b></p><br>
+      <img src="https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo" width="500" height="333">
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/upgraded.kolasmith"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/the_real_philip617"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://msng.link/o/?kolade_ogun2019=sc"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://pinterest.com/pin/create/button/?url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html&media=&descriptionWWE%20Kevin%20Owens%20Impersonates%20Stone%20cold%20Steve%20Austin%20%F0%9F%98%B3%20WrestleMania%2038"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/koladhino"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://api.whatsapp.com/send?phone=+2348094815695&text=Hello+Bot+I+need+a+website" title="PS" target="_blank" class="w3-hover-text-green">Philip Smith Sites</a></p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
