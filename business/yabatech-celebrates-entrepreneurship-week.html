@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yabatech Celebrates world Entrepreneurship week ......</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://i.postimg.cc/Y2zWkqv2/IMG-20221021-WA0066.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Business Page</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOMEPAGE</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Sport</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Education</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Arts & Culture</a>
+    <a href="https://truefactss.github.io/entertainment/anikulapo-review.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Politics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Investigations</a>
+    <a href="https://truefactss.github.io/Articles/top-ten-best-banks-in-nigeria.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Corporate Responsibility</a>
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+<i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://truefactss.github.io" class="w3-bar-item w3-button" onclick="toggleFunction()">HOMEPAGE</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Sport</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Education</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Arts & Culture</a>
+    <a href="https://truefactss.github.io/entertainment/anikulapo-review.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Entertainment</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Politics</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Lifestyle</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Investigations</a>
+    <a href="https://truefactss.github.io/Articles/top-ten-best-banks-in-nigeria.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Opinion Articles</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">Corporate Responsibility</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Truefactss</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Yabatech Celebrates Entrepreneurship day..</h3>
+  <p class="w3-center"><em>David Orji</em></p>
+  <p> 
+     <p style="color:#0000FF">Yabatech Celebrates world Entrepreneurship week..</p>
+
+
+
+Yaba College of Technology (Yabatech) chapter of the Centre for Entrepreneurship Development joins the rest of the world in celebrating Global Entrepreneurship Week at the sport complex, with the theme "Inspiring the business community.
+
+Mr. Bolaji Cole, Director of the Yabatech Centre for Entrepreneurship Development, stated, "The exhibition will feature student projects, the work of a student who owns a business and has decided to set up shop in a specific location; it will also provide space for local businesses.
+
+The event will begin with a walk-through of the college down to management. He continued.
+
+He stated, "We are here to celebrate students; it is a day on which we want to promote student enterprises and efforts. For over six weeks, students have been at the forefront, running project phases and doing their best. So today we have panalists, specialists in the fashion industry, agriculture, and information technology, and we recommend that you spend some quality time listening to them because there is a lot to learn."
+
+Bolaji provided a brief history, saying, "We've been around since 2003, so this year marks 19 years of entrepreneurship on campus. This year's exhibition is the 11th edition, and there are about 20 entrepreneurs from as far away as Kano. 
+
+"There have been accomplishments; previously, we had about five entrepreneurs from the local economy participating, but this time we have over 20 and are still growing; we have new entrepreneurs from Kano participating and exhibiting gold and other accessories cosmetology products.
+
+"We are attempting to create a business ecosystem. Every day, we sell stands for 3,000 naira, which include a canopy, a table, a chair, and a bottle of water. We are doing everything we can to encourage these entrepreneurs so that when their businesses grow and people learn about them, students will be able to fit into that ecosystem. We have student entrepreneurs who have taken up stands; each stand for students is 1000 naira.
+
+"The topic for these Entrepreneurship was chosen because businesses in Nigeria are having a difficult time growing, so we want to create an enabling environment for businesses to grow.
+
+Comfort Oladetu, an HND 1 mass communication student, stated that "she is able to make sales because her products are student friendly." I am displaying my goods; students can purchase earrings for as little as 100naira, and my wears range in price from 500naira to 5,000naira.
+
+"The stand for my product display cost one thousand naira per day and a total of five thousand naira for five days as the sales would last for five days, my business makes me happy, selling in student environments exposes me to how much students can afford and what to bring to students table, the business is what I use to pay my school fees, house rent, and everything."
+
+Furthermore, Esther Udoh, a part-time ND 3 student who also purchased a stand for her product, told True Fact that all of her footwear is handcrafted. The major challenge, however, is the increase in raw materials as she imports her materials from Ghana. "Two months ago, I spent about 400 cedis, which is equivalent to 20,000 naira, but now I got the materials at the rate of 450 cedis, which is equivalent to 25,000 naira," she observed.
+
+Mr. Bolaji Pelumola, Principal Centre for Entrepreneurship Development, says the goal is to promote student production and sell it so that it is available to students and staff at the college. Pelumola adds that they are attempting to organize sales for the majority of what their customers provided.
+
+Meanwhile, the Deputy Rector Administration, Mr. U.I. Inyang Udoh, and the Registrar, Dr. S.O Momodu, expressed appreciation in their addresses that the Entrepreneurship Week theme is consistent with the 34th annual convocation lecture, which is titled "the importance of entrepreneurship in the lives of students and society."
+
+
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Don't forget to comment.</b></p><br>
+      <script src="https://cdn.fastcomments.com/js/embed-v2.min.js"></script>
+<div id="fastcomments-widget"></div>
+<script>
+    FastCommentsUI(document.getElementById('fastcomments-widget'), {
+        tenantId: 'AC6VPRnrDyH'
+    });
+</script>
+
+      <img src="https://i.postimg.cc/CL6y105C/IMG-20221126-WA0005.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo" width="500" height="333">
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/upgraded.kolasmith"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/the_real_philip617"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://msng.link/o/?kolade_ogun2019=sc"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://pinterest.com/pin/create/button/?url=https://9jahotblog.github.io/entertainment/kevin-impersonates-stone-cold.html&media=&descriptionWWE%20Kevin%20Owens%20Impersonates%20Stone%20cold%20Steve%20Austin%20%F0%9F%98%B3%20WrestleMania%2038"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/koladhino"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://api.whatsapp.com/send?phone=+2348094815695&text=Hello+Bot+I+need+a+website" title="PS" target="_blank" class="w3-hover-text-green">Philip Smith Sites</a></p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87BP5F4NWS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-87BP5F4NWS');
+</script>
